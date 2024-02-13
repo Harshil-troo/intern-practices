@@ -1,0 +1,17 @@
+[
+  {
+      "name" : "Harshil Sidapara",
+      "age" : 22,
+      "salary" : 25000
+  },
+  {
+      "name" : "Tasmey",
+      "age" : 22,
+      "salary" : 20000
+  },
+  {
+      "name" : "Jay",
+      "age" : 23,
+      "salary" : 15000
+  }
+]

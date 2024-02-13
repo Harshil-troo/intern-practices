@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/10_std_libraries.iml" filepath="$PROJECT_DIR$/.idea/10_std_libraries.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../11_std_libraries- II/.idea/11_std_libraries- II.iml" filepath="$PROJECT_DIR$/../11_std_libraries- II/.idea/11_std_libraries- II.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../8_Error&amp;Exce/.idea/8_Error&amp;Exce.iml" filepath="$PROJECT_DIR$/../8_Error&amp;Exce/.idea/8_Error&amp;Exce.iml" />
+    </modules>
+  </component>
+</project>

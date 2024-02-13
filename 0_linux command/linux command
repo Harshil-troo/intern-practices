@@ -1,0 +1,48 @@
+pwd :-used to display the location of the current working directory. syntax:- pwd
+mkdir:-used to create a new directory under any directory. syntax:- mkdir <directory name>  
+rmdir :- used to delete a directory. syntax:- rmdir <directory name>
+ls :- used to display a list of content of a directory. syntax:- ls
+cd:- command used to change the director. syntax:-cd
+touch:- to create empty files.and we can create multiple empty files by executing command once. syntax:-touch <file name>touch <file1>  <file2> ....
+cat:- it is multi purpose command . used to create a file , display a content and copy from one file to another file. syntax:-cat [OPTION]... [FILE]..  
+rm:- used to remove file or directory  syntax:-rm<filename>
+cp:-used to copy file or directory syntax:-cp <existing file name> <new file name>  
+mv:- to move file or directory from one to another file location. syntax:-mv <filename><directory path>
+rename:- used to rename file.also used to rename large amount of file syntax:-rename 's/old-name/new-name/' files "rename 's/\.txt$/\.pdf/' *.txt":- used to convert all text file to pdf file.
+head:- used to display the content of file.it display only first 10 lines of file. syntax:- head<filename>
+tail :- same as head command but it display the last 10 lines of files and its helpful to find the error. syntax:- tail<file name>
+tac :- it is reversed version of cat command as it specified. it dislays the content of file in reverese order. syntax :- tac<file name>
+more :- this is same as cat command . only difference between both command is tha it is used for larger file to display screenful output at time. syntax:- more<filename>
+less:- it is also same as the more command.  it includes extra feature such as height and width of terminal.
+su :- it provide administrative access to another user.it allow access of linux shell. syntax:- su<user name>
+id :- it is used to display user id and group id. syntax :- id
+useradd command:- it is used to add or remove user from linux shell. syntax:- useradd username
+passwd :- it is used to create and change the password of user. syntax:- passwd <username>
+groupadd command: it is used to create user group. synatx:- group add<group names>
+cat command:- it is used as a filter.it is used inside a pipe. syntax:- cat<filename>
+cut command:- used to select specific column of file.'-d' option is used as a delimiter, and it can be a space (' '), a slash (/), a hyphen (-) ,the '-f' option is used to specify a column number. syntax :- cut -d(delimiter) -f(columnNumber) <fileName>  
+grep command:- most powerful keyword and used as filter in linux shell.it stands for global regular expression print.it is used for searching in file and used with a pipe. syntax:- command |grep<searchword>
+comm command:- it is used to compare two file or streams. syntax:- comm<file1><file2>
+sed command:-  it is known as stream editor.it is used to edit file as regular expression. syntax:- command | sed 's/<oldWord>/<newWord>/' 
+teen command:- it is quite similar to cat command.only difference is that it puts standard input to standard oputput and also write them into file. syntax:-cat <fileName> | tee <newFile> |  cat or tac|...
+tr command:- it is used top translate file command from upper to lower case in file.command | tr <'old'> <'new'> 
+uniq command:-it is used to form a sorted list in which every word will only occur once. syntax;- command filename |uniq
+wc :- it is used to count the word, line , characters in a file. syntax:- wc<filename>.
+od command:- it is used to display the content of filein hexadecimal,octal characters. syntax:- od-b<fileName> 
+sort : it is used to sort file in alphabetically order.syntax :- sort <file name>  
+gzip command:- it is used to truncat the size of file. It is a compressing tool. It replaces the original file by the compressed file having '.gz' extension.
+gunzip command:- used to decompressed the file. it is reverse operation of zip command.syntax:- gunzip <file1> <file2> <file3>. .  
+find:- The find command is used to find a particular file within a directory. syntax:- find.-name "*.pdf" 
+locate command:- The locate command is used to search a file by file name. It is quite similar to find command; the difference is that it is a background process.  syntax:- locater<filename>
+date :- it is used to display date,time and time zone. syntax:- date
+cal:- it is used to display the current month calender. syntax:- cal<
+sleep :- it is used to hold the terminal by amount of time usually in second.
+time:- it is used to display the time taken to execute the command.
+zcat command :- it is used to display the content of compressed files. syntax:- zcat<file Name>
+df command:- used to display the disk file used in system. syntax:-df
+mount command:used to connect external device to file's system.syntax:-mount -t type<device><directory>
+exit:- used to exit the current shell. syntax:- exit
+clear:- it is used to clear the screen. syntax:- clear
+ip :- used to assign ip address. syntax:- ip a
+ssh:- used to create remote connection through ssh protocol. syntax:- ssh user_name@host(IP/Domain_name)</p>  
+
