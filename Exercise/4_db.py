@@ -43,7 +43,7 @@ def get_doctors(Hospital_Id):
 
         close_connection(connection)
     except (Exception, mysql.connector.Error) as error:
-        print("Error while getting doctor's data", error)
+        print("ErroR while getting doctor's data", error)
 
 
 print("Question 4:  Get List of doctors of a given Hospital Id\n")
