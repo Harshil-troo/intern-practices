@@ -57,12 +57,12 @@
 
 # WAP: to write content in file and use error handling.
 
-try:
-    file_loc = "sample1.txt"
-    content = input("Enter file Content: ")
-    with open(file_loc,"w") as file:
-        file.write(content)
-        file.close()
-
-except Exception as e:
-    print(f"{e}")
+# try:
+#     file_loc = "sample1.txt"
+#     content = input("Enter file Content: ")
+#     with open(file_loc,"w") as file:
+#         file.write(content)
+#         file.close()
+#
+# except Exception as e:
+#     print(f"{e}")
