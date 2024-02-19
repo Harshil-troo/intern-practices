@@ -5,14 +5,18 @@ class BookMyShow:
 
     def __init__(self):
         self.users = None
-        self.users_file = 'users.json'
+        self.users_file = 'user_data.json'
         self.load_users()
 
     def load_users(self):
-        self.users = {'admin': {}, 'customer': {}}
+        try:
+            with open(self.users_file, 'r') as file:
+                self.users = json.load(file)
+        except FileNotFoundError:
+            self.users = {'admin': {}, 'customer': {}}
 
     def save_users(self):
-        with open(self.users_file, 'w') as file:
+        with open(self.users_file, 'a') as file:
             json.dump(self.users, file)
 
     def sign_up(self, user_type):
@@ -30,13 +34,13 @@ class BookMyShow:
         else:
             print("Invalid username or password")
 
-    @staticmethod
-    def admin_menu():
-        print("Welcome Admin!")
-
-    @staticmethod
-    def customer_menu():
-        print("Welcome Customer!")
+    # @staticmethod
+    # def admin_menu():
+    #     print("Welcome Admin!")
+    #
+    # @staticmethod
+    # def customer_menu():
+    #     print("Welcome Customer!")
 
     def menu(self):
         while True:
@@ -67,6 +71,7 @@ class BookMyShow:
 
 book_my_show = BookMyShow()
 book_my_show.menu()
+
 
 
 
