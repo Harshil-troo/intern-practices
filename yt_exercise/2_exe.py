@@ -66,3 +66,4 @@
 #
 # ride = float(input("Enter your travelled distance: "))
 # fare(ride)
+

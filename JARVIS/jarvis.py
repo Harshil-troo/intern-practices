@@ -5,6 +5,8 @@ import sounddevice
 def say(str):
     speaker = pyttsx3.init()
     speaker.say(str)
+    speaker.runAndWait()
+say("Hello and welcome!!!")
 
 def listen():
     try:
@@ -13,6 +15,7 @@ def listen():
             print("Listening... Sir!")
             audio = r.listen(mic)
             text = r.recognize_google(audio)
+            print(text)
             return text.lower()
 
     except Exception:
