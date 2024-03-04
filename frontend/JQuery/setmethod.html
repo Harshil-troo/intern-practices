@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content=" width=device-width,initial-scale=1.0">
+    <title>JQuery Set Methods</title>
+    <style>
+        #box{
+            border : 1px solid red;
+            background-color: burlywood;
+            margin: 10px;
+            padding: 10px;
+        }
+        .pink{
+        background-color : pink !important;
+        }
+        #mybtn{
+            margin: 20px;
+        }
+    </style>
+</head>
+<script src ="jquery/jquery.js"></script>
+<body>
+    <div id="box" class ="mydiv test newclass">
+        <h3>Hello World</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, iure illo! Nostrum quos impedit voluptatem corporis omnis recusandae voluptas assumenda?</p>
+        <ul>
+            <li>Harshil</li>
+            <li>Sidapara</li>
+            <li>Surat</li>
+        </ul>
+    </div>
+    <form action="" id="myform">
+        <label for="sname">Student Name</label>
+        <input type="text" name="" id="sname" placeholder="Enter Student Name">
+        <label for="sname">Student Class</label>
+        <input type="number" name="" id="sclass" placeholder="Enter Student Class">
+        <input type="submit" value="submit">
+    </form>
+    <button id="mybtn">Click for Set Methods</button>
+</body>
+<script>
+    //Set Methods
+   $(document).ready(function(){
+        //.html()
+        $("#mybtn").click(function () {
+            $("#box h3").html("Hello How Are You??")
+
+            //.text()
+            $("#box p").text("This is changed with set method")
+
+            //.attr()
+            $("#box").attr("class","pink")
+
+            //.val()
+            $("#sname").val("Harshil Sidapara")
+            $("#sclass").val(12)
+
+        })
+    })
+</script>
+</html>

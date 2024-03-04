@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Syntax</title>
+</head>
+<script src="/jquery/jquery.js"></script>
+<body>
+    <h1>JQuery Syntax</h1>
+    <ul id = "mylist">
+        <li>Hello</li>
+        <li>World</li>
+        <li class="tutorial">Jquery</li>
+        <li>Tutorial</li>
+    </ul>
+</body>
+<script>
+    // $("Selector").method(function()) Basic jquery syntax
+    console.log($('h1').html())
+    console.log($('ul').html())
+    $("#mylist li").click(function(){
+        console.log("You Clicked")
+    })
+<!--     we can also use CDN(Content Delivery Network)-->
+</script>
+</html>

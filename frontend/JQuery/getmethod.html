@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content=" width=device-width,initial-scale=1.0">
+    <title>JQuery Get Methods</title>
+    <style>
+        #box{
+            border : 1px solid red;
+            background-color: burlywood;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<script src ="jquery/jquery.js"></script>
+<body>
+    <div id="box" class ="mydiv test newclass">
+        <h3>Hello World</h3>
+        <ul>
+            <li>Harshil</li>
+            <li>Sidapara</li>
+            <li>Surat</li>
+        </ul>
+    </div>
+    <form action="" id="myform">
+        <label for="sname">Student Name</label>
+        <input type="text" name="" id="sname" placeholder="Enter Student Name">
+        <label for="sname">Student Class</label>
+        <input type="number" name="" id="sclass" placeholder="Enter Student Class">
+        <input type="submit">
+    </form>
+</body>
+<script>
+    //Get Methods
+    $(document).ready(function(){
+
+        //.html() retrieves html of the element
+    let temp = $('#box').html()
+    console.log(temp);
+
+     //.text()
+    let temp2 = $('#box ul').text()
+    console.log(temp2);
+
+     //.attr() returns a value of attribute data retrieve
+    let temp3 = $('#box').attr("class")
+    console.log(temp3);
+
+    //.val() works with forms input
+    $('#myform').submit(function(){
+        let sname = $("#sname").val()
+        let sclass = $("#sclass").val()
+        alert("Hello "+sname+" Class: "+sclass)
+    })
+    })
+</script>
+</html>

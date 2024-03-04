@@ -11,8 +11,8 @@
 {% block javascript %}
       <script src="https://cdn.ckeditor.com/ckeditor5/41.1.0/classic/ckeditor.js"></script>
       <script>
-          let editor = document.getElementById("id_message");
-          ClassicEditor.create(editor);
+          let inputMessage = document.getElementById("id_message");
+          let editor =  ClassicEditor.create(inputMessage);
       </script>
 {% endblock %}
 

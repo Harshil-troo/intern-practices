@@ -2,6 +2,14 @@
 
 {% block title %}Start a New Topic{% endblock %}
 
+{% block javascript %}
+      <script src="https://cdn.ckeditor.com/ckeditor5/41.1.0/classic/ckeditor.js"></script>
+      <script>
+          let editor = document.getElementById("id_message");
+          ClassicEditor.create(editor);
+      </script>
+{% endblock %}
+
 {% block breadcrumb %}
   <li class="breadcrumb-item"><a href="{% url 'home' %}">Boards</a></li>
   <li class="breadcrumb-item"><a href="{% url 'board_topics' board.pk %}">{{ board.name }}</a></li>

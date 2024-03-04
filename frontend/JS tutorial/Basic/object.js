@@ -43,5 +43,5 @@ function bookConstructor(title){
 const book1 = new bookConstructor("Ramayan");
 console.log(book1)
 book1.author = "Valmiki";;
-console.log(book1)
-console.log(book1.available)
+//console.log(book1)
+//console.log(book1.available)

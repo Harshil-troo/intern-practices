@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content=" width=device-width,initial-scale=1.0">
+    <title>CSS & Class Method</title>
+    <style>
+        div#box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border: 1px solid red;
+            padding: 25px;
+        }
+        .red{
+            background-color:red;
+            color: aliceblue;
+        }
+        .green{
+            background-color:lightgreen;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<script src="/jquery/jquery.js"></script>
+<body>
+    <div id="box">
+        <p class="mypara">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, iure illo! Nostrum quos impedit voluptatem corporis omnis recusandae voluptas assumenda?
+        </p>
+        <button id="mybtn">Click Me to Add Class</button>
+        <button id="mybtn2">Click Me to Remove Class</button>
+        <button id="mybtn3">Click Me to Toggle Class</button>
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+        console.log("JQuery CSS and Class Methods")
+        $("#mybtn").click(function(){
+<!--            $("div#box").css({-->
+<!--            "background-color":"black",-->
+<!--            "color":"white"-->
+<!--            })-->
+            // add class
+            $("div#box").addClass("red green")
+        })
+        // remove class
+        $("#mybtn2").click(function(){
+            $("div#box").removeClass("red green")
+
+        })
+        // toggle class
+        $("#mybtn3").click(function(){
+            $("div#box").toggleClass("red green")
+
+        })
+    })
+</script>
+</html>

@@ -11,6 +11,8 @@ from django.views.generic import UpdateView
 from django.utils.decorators import method_decorator
 from django.utils import timezone
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from django.urls import reverse
+
 
 
 
@@ -123,7 +125,7 @@ def reply_topic(request, pk, topic_pk):
                 page=topic.get_page_count()
             )
 
-        return redirect('topic_posts', pk=pk, topic_pk=topic_pk)
+            return redirect(topic_post_url)
     else:
         form = PostForm()
     return render(request, 'reply_topic.html', {'topic': topic, 'form': form})
