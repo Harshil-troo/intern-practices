@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Hide Tutorial</title>
+    <Style>
+        #box {
+            background-color: blue;
+            width: 250px;
+            height: 250px;
+            border: 2px solid;
+            border-radius: 50%;
+            margin: 10px;
+        }
+        button{
+            margin: 10px;
+        }
+
+    </Style>
+</head>
+<script src="/jquery/jquery.js"></script>
+<body>
+ <button id="in">FadeIn</button>
+ <button id="out">FadeOut</button>
+ <button id="toggle">Toggle</button>
+ <button id="toggle1">FadeTo</button>
+ <div id="box"></div>
+</body>
+<script>
+    $(document).ready(function(){
+
+        //FadeOut
+        $("#out").click(function(){
+            $("#box").fadeOut();
+        })
+
+         //FadeIn
+        $("#in").click(function(){
+            $("#box").fadeIn(2000);
+        })
+
+         //FadeToggle
+        $("#toggle").click(function(){
+            $("#box").fadeToggle();
+        })
+
+          //FadeTo
+        $("#toggle1").click(function(){
+            $("#box").fadeTo(1000,.8,function(){
+                alert("Element is fade 80%")
+            })
+        })
+
+    })
+</script>
+</html>

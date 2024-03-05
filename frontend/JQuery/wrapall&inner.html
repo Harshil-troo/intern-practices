@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WrapAll & WrapInner Method jQuery</title>
+    <style>
+        .pink {
+            background-color: pink;
+        }
+    </style>
+</head>
+<script src="/jquery/jquery.js"></script>
+<body>
+    <div id="box">
+        <h1>Hello Harshil</h1>
+        <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, asperiores?</p>
+        <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, asperiores?</p>
+        <p class="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, asperiores?</p>
+        <span>Harshil Sidapara</span><br>
+        <span>Hello World</span><br>
+    </div>
+    <button id="mybtn">WrapAll</button>
+    <button id="mybtn2">wrapInner</button>
+</body>
+<script>
+    $(document).ready(function(){
+
+        //WrapAll Method
+        $("#mybtn").click(function(){
+            $("#box p").wrapAll("<h3 class='pink'></h3>")
+        })
+
+        //WrapInner Method
+        $("#mybtn2").click(function(){
+            $("#box p").wrapInner("<b></b>")
+        })
+    })
+</script>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Method jQuery</title>
+    <style>
+        * {
+            margin: 10px;
+            padding: 10px;
+        }
+        body{
+            text-align: center;
+        }
+        #box1 {
+            background-color: aqua;
+            border: 1px solid;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<script src="/jquery/jquery.js"></script>
+<body>
+    <div id="box1">
+        <h1>Hello Harshil</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, asperiores?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, asperiores?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, asperiores?</p>
+
+    </div>
+    <button class="replacebtn">Replace</button>
+</body>
+<script>
+    $(document).ready(function(){
+       console.log("ReplaceWith & ReplaceAll Method")
+<!--       $(".replacebtn").click(function(){-->
+<!--          $("#box1 p:nth-child(4)").replaceWith("<h3>Hello Harshil</h3>")-->
+<!--       })-->
+        $(".replacebtn").click(function(){
+            $("<h2>Good Morning</h2>").replaceAll("#box1 p")
+        })
+    })
+</script>
+</html>

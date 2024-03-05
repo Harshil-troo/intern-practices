@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content=" width=device-width,initial-scale=1.0">
+    <title>After & Before Methods</title>
+    <style>
+        div#box{
+            background-color:   burlywood;
+            border: 1px solid;
+            padding: 10px;
+        }
+        button{
+            margin: 10px;
+        }
+    </style>
+</head>
+<script src="/jquery/jquery.js"></script>
+<body>
+    <div id="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur praesentium ab perspiciatis quisquam, ipsam recusandae ad hic voluptas inventore laudantium repudiandae accusamus repellat vitae, ducimus aliquid fuga iste adipisci iusto vel maiores dolore amet minima aliquam tenetur! Amet id eveniet quia harum obcaecati suscipit porro quaerat libero modi dicta eos ex, dolorum assumenda temporibus rem ipsam pariatur officia ipsum! Minima ab perspiciatis inventore quod itaque blanditiis fugiat harum adipisci ratione deleniti nam a, labore eius iusto quas, temporibus magni obcaecati quaerat commodi unde dicta voluptate accusantium dolores modi. Alias vel natus architecto a? Corrupti, maiores. Illum nobis officiis non labore.</p>
+    </div>
+
+    <button class="btn1">Empty</button>
+    <button class="btn2">Remove</button>
+</body>
+<script>
+    $(document).ready(function () {
+        //Empty Method
+        $(".btn1").click(function (){
+            $("#box").empty()
+        })
+        //Remove Method
+        $(".btn2").click(function (){
+            $("#box").remove()
+        })
+    })
+</script>
+</html>

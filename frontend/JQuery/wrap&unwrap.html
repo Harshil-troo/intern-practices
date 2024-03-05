@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wrap & UnwrapMethod jQuery</title>
+    <style>
+        * {
+            margin: 10px;
+            padding: 10px;
+        }
+        body{
+            text-align: center;
+        }
+        #box {
+            background-color: aqua;
+            border: 1px solid;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<script src="/jquery/jquery.js"></script>
+<body>
+    <div id="box">
+        <h1>Hello Harshil</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, asperiores?</p>
+    </div>
+    <button id="mybtn">Wrap</button>
+    <button id="mybtn2">Unwrap</button>
+</body>
+<script>
+    $(document).ready(function(){
+        $("#mybtn").click(function(){
+            $("#box p").wrap("<h1></h1>")
+        })
+         $("#mybtn2").click(function(){
+            $("#box p").unwrap()
+        })
+    })
+</script>
+</html>

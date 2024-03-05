@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Hide Tutorial</title>
+    <Style>
+        #box {
+            background-color: yellow;
+            width: 250px;
+            height: 250px;
+            border-radius: 25%;
+            margin: 10px;
+        }
+        button{
+            margin: 10px;
+            padding: 5px;
+            border: 5px solid;
+            border-radius: 25%;
+
+        }
+
+    </Style>
+</head>
+<script src="/jquery/jquery.js"></script>
+<body>
+ <button id="up">Slide Up</button>
+ <button id="down">Slide Down</button>
+ <button id="toggle">Toggle</button>
+ <div id="box"></div>
+</body>
+<script>
+    $(document).ready(function(){
+       //Slide Up
+       $("#up").click(function(){
+            $("#box").slideUp(1000,function(){
+                alert("This is a slide up")
+            });
+       })
+
+        //Slide Down
+       $("#down").click(function(){
+            $("#box").slideDown(2000);
+       })
+
+         //Slide Toggle
+       $("#toggle").click(function(){
+            $("#box").slideToggle(2000);
+       })
+    })
+</script>
+</html>

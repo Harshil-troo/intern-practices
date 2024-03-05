@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position & Offset jQuery</title>
+     <style>
+        div#box {
+            background-color: aqua;
+            padding: 10px;
+            margin: 10px;
+            border: 10px solid;
+        }
+     </style>
+</head>
+<script src="/jquery/jquery.js"></script>
+<body>
+    <div id="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sed eum at, dolores laboriosam reiciendis minus corrupti error, ipsam qui illum! Esse totam illo labore repudiandae explicabo expedita veritatis doloremque.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque officia amet mollitia voluptatem impedit delectus ipsam quia voluptas facere dolor ut voluptatum, qui quo dicta odit architecto! Numquam, expedita molestiae!
+        </p>
+    </div>
+    <button class="btn1">Position</button>
+    <button class="btn2">Offset</button>
+</body>
+<script>
+    $(document).ready(function(){
+            //position method
+          $(".btn1").click(function(){
+            let x = $("#box").position()
+            console.log("top "+x.top+" left "+x.left)
+        })
+
+           //offset method
+        $(".btn2").click(function(){
+            let x = $("#box").offset()
+            console.log("top "+x.top+" left "+x.left)
+        })
+    })
+</script>
+</html>

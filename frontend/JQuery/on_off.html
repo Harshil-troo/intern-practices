@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content=" width=device-width,initial-scale=1.0">
+    <title>On & Off Method</title>
+    <style>
+        div#box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border: 1px solid red;
+            padding: 25px;
+        }
+        .red{
+            background-color:red;
+            color: aliceblue;
+        }
+        .green{
+            background-color:lightgreen;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<script src="/jquery/jquery.js"></script>
+<body>
+    <div id="box">
+        <p class="mypara">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, iure illo! Nostrum quos impedit voluptatem corporis omnis recusandae voluptas assumenda?
+        </p>
+    </div>
+    <button id="mybtn">Click Button</button>
+</body>
+<script>
+    $(document).ready(function(){
+    // on method
+<!--        $("#box").on("mouseenter mouseleave",function(){-->
+<!--            $(this).toggleClass("red")-->
+<!--        })-->
+        $("#box").on({
+            click: function(){
+                $(this).css("background-color","red")
+            },
+            mouseenter: function(){
+                $(this).css("background-color","orange")
+            },
+            mouseleave: function(){
+                $(this).css("background-color","green")
+            }
+        })
+        // off method
+        $("#mybtn").click(function () {
+            $("#box").off("click mouseenter")
+        })
+    })
+</script>
+</html>
